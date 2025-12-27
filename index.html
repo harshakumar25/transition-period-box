@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition period</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            border: 2px solid wheat;
+        }
+        :root  {
+            background-color: black;
+            border: 2px solid white;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: fit-content;
+            /* gap: 20px;
+            padding: 20px; */
+        }
+        .left,.right {
+            display: flex;
+            flex-direction: row;
+            /* gap: 10px; */
+            /* margin: 10px; */
+            /* padding: 10px; */
+        }
+        .box {
+            height:200px;
+            width: 200px;
+        }
+        .one {
+            background-color: rgb(5, 44, 44);
+        }
+        .two {
+            background-color: bisque;
+        }
+        .three {
+            background-color: rgb(82, 80, 80);
+        }
+        .fourth {
+            background-color: rgb(34, 103, 103);
+        }
+        .fifth {
+            background-color: whitesmoke;
+        }
+        .sixth {
+            background-color: yellow;
+        }
+        .one:hover {
+            width: 100vw;
+            transition-duration: 2s;
+            background-color: aqua;
+            transform: scaleX(-0.1); 
+            /* slow than fast
+            transition-timing-function: ease-in;
+            */   
+        }
+        .two:hover {
+            width: 100vw;
+            transition-duration: 3s;
+            background-color: rgb(155, 122, 61);
+             transform: scaleX(-0.1);
+           /* transition-property: width, transform; */
+           /* transition-delay: 1s; */
+           /* fast than slow  */
+           transition-timing-function: ease-out;
+        }
+        .three:hover {
+            width: 100vw;
+            transition-duration: 2s;
+            background-color: rgb(230, 13, 13);
+            transform: scaleX(-0.01);
+            /* slow fast slow */
+            transition-timing-function: ease-out;
+            /* transition-timing-function: smooth; */
+        }
+        .fourth:hover {
+             width: 100vw;
+            transition-duration: 2s;
+            background-color: yellowgreen;
+            transform: scaleX(-0.1);
+            transition-timing-function: ease-out;
+        }
+        .fifth:hover {
+             width: 100vw;
+            transition-duration: 2s;
+            background-color:sienna;
+            transform: scaleX(-0.1);
+            transition-timing-function: ease-out;
+        }
+        .sixth:hover {
+              width: 100vw;
+            transition-duration: 2s;
+            background-color:sienna;
+            transform: scaleX(-0.1);
+            transition-timing-function: ease-out;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <!-- container for defing the flexbox -->
+  <div class="conatiner">
+    <div class="left">
+    <div class="box one"></div>
+    <div class="box two "></div>
+    <div class="box three"></div>
+    </div>
+    <div class="right">
+    <div class="box fourth"></div>
+    <div class="box fifth"></div>
+    <div class="box sixth"></div>
+    </div>
+    </div>
+    </header>
+
+</body>
+</html>
